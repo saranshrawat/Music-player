@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- here we have created a basic layout for all the music list view-->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/list_bg">
+
+        <ImageView
+            android:id="@+id/imagesong"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_music"
+            />
+        <TextView
+            android:id="@+id/text_songname"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@+id/imagesong"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="6dp"
+            android:textColor="#FFFFFF"
+            android:text="Song name"
+            android:textSize="15sp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            tools:ignore="RtlCompat"
+            />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
